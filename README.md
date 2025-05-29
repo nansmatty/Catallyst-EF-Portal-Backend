@@ -89,17 +89,23 @@ NODE_ENV=development
 
 ## Clone the repository
 
+```
 git clone https://github.com/your-username/cattalyst_backend.git
 cd cattalyst_backend
+```
 
 ## Install Dependencies
 
+```
 npm install
+```
 
 ## Create .env and fill in your MONGODB URL and others ENV Variables
 
 ## Run the server
 
+```
 npm run dev
+```
 
 The server should be up and running.
