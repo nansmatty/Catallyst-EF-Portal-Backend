@@ -33,7 +33,10 @@ Frontend is maintained in a separate repository.
 
 ## 📦 Project Structure
 
+```
+Directory structure:
 └── nansmatty-catallyst-ef-portal-backend/
+├── README.md
 ├── package.json
 └── src/
 ├── app.js
@@ -52,6 +55,7 @@ Frontend is maintained in a separate repository.
 └── utils/
 ├── catchAsyncError.js
 └── errorHandler.js
+```
 
 ---
 
