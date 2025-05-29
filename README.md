@@ -83,6 +83,7 @@ Create a `.env` file in the root directory and add:
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 NODE_ENV=development
+FRONTEND_URL=http://localhost:5173/
 ```
 
 ---

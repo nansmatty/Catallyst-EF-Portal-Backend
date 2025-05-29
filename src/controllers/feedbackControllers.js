@@ -19,6 +19,8 @@ export const getAllFeedback = CatchAsyncError(async (req, res, next) => {
 export const submitFeedback = CatchAsyncError(async (req, res, next) => {
 	const { feedbackText, category } = req.body;
 
+	console.log({ feedbackText, category });
+
 	if (!feedbackText || !category) {
 		return next(new ErrorHandler('Please provide all the details', 400));
 	}
@@ -26,7 +28,7 @@ export const submitFeedback = CatchAsyncError(async (req, res, next) => {
 	const newFeedback = await Feedback.create({ feedbackText, category });
 
 	if (!newFeedback) {
-		return next(new ErrorHandler('Something went wrong while submitting the feedback', 400));
+		return next(new ErrorHandler('Something went wrong while submitting the feedback', 404));
 	}
 
 	return res.status(201).json({

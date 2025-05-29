@@ -1,14 +1,17 @@
 import express from 'express';
 import morgan from 'morgan';
+import cors from 'cors';
 import { ErrorMiddleware } from './middlewares/errorMiddleware.js';
 import ErrorHandler from './utils/errorHandler.js';
 import feedbackRoutes from './routes/feedbackRoutes.js';
 import { Config } from './config/index.js';
+import { corsOptions } from './config/corsOptions.js';
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors(corsOptions));
 
 if (Config.NODE_ENV === 'development') {
 	app.use(morgan('dev'));
