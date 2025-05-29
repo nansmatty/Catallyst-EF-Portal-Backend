@@ -18,7 +18,7 @@ Frontend is maintained in a separate repository.
 - View all submitted feedback
 - Filter feedback by category
 - Mark feedback as reviewed
-- Delete feedback (optional)
+- Delete feedback
 
 ---
 
